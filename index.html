@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>盒子模型 页面</title>
+	<style>
+	.a{
+		background:pink;
+		width:400px;
+		height:50px;
+		}
+	.a1{
+		background:purple;
+		width:400px;
+		height:100px;
+		margin-top:5px;
+		}
+	.b,.c,.d,.e{
+		width:100px;
+		height:100px;
+		}
+	.b{
+		background:yellow;
+		float:left;
+		}
+   .c{
+		background:orange;
+		float:right;
+			}
+	.bc{
+		width:200px;
+		margin:5px 0;
+		float:left;
+	}
+	.d{
+		background:orange;
+		float:left;
+		}
+  .e{
+		background:yellow;
+		float:right;
+		}
+	.de{
+		width: 200px;
+		margin-bottom:5px;
+		}
+	.f{
+		background:#ff7575;
+		width: 195px;
+		height: 200px;
+		float: right;
+		margin-top:5px;
+	}
+	.g {
+		width: 400px;
+	}
+	.clearfix::after{
+		content:'';
+		display:block;
+		clear:both;}
+	</style>
+</head>
+<body>
+	<div class="a">123</div>
+	<div class="a1">123</div>
+	<div class="g clearfix">
+		<div class="bc clearfix">
+			<div class="b">123</div>
+			<div class="c">123</div>
+		<!-- </div> -->
+		<!-- <div class="de clearfix"> -->
+			<div class="d">123</div>
+			<div class="e">123</div>
+		</div>
+			<div class="f">123</div>
+		</div>
+	<div class="a">123</div>
+</body>
+</html>
